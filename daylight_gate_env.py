@@ -32,7 +32,7 @@ class DaylightGateEnv():
             reward = -1
             terminated = False
         
-        return state, reward, terminated
+        return next_state, reward, terminated
 
     def reset(self):
         return 

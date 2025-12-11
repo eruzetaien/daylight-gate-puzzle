@@ -22,7 +22,7 @@ class DaylightGateAgent(): # Tabular Q-Learning
         best_action = np.argmax(state_q_values)
         return int(best_action)
 
-    def update(self, state, action, reward, next_state):
+    def update(self, state, action, reward, next_state): # Sutton Pg. 131
         state_idx = self.state_to_index(state)
         next_state_idx = self.state_to_index(next_state)
         
