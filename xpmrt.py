@@ -1,4 +1,3 @@
-import numpy as np
 from daylight_gate_agent import DaylightGateAgent
 from daylight_gate_env import DaylightGateEnv
 from utils import plot_q_learning_reward_training
@@ -58,7 +57,12 @@ def simulate_next_move(current_state, agent):
 def main():    
     agent, all_rewards = run_q_learning_experiment()
     plot_q_learning_reward_training(all_rewards)
-    simulate_next_move([1,1,1,1,1,1],agent)
+    simulate_next_move([
+        1,1,
+        1,0,
+        1,0
+    ]
+    , agent)
     
 
 if __name__ == "__main__":

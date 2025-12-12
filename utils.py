@@ -7,7 +7,7 @@ def plot_q_learning_reward_training(mean_profits,output_dir="plots"):
     plt.figure(figsize=(10, 5))
     plt.plot(mean_profits, label="Reward per Episode", color='blue', linewidth=1)
     plt.xlabel("Episode")
-    plt.ylabel("Total Profit")
+    plt.ylabel("Total Reward")
     plt.title(f"Q-Learning Reward Trend")
     plt.grid(True)
     plt.legend()
